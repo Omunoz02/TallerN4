@@ -47,7 +47,7 @@ class Agenda:
 		self.menu()
 
 		
-		def anadir(self):
+	def anadir(self):
 		print(">>>Añadir nuevo contacto<<<")
 		print("\n")
 		nombre=input("Introduzca el nombre: ")
