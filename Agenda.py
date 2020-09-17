@@ -45,3 +45,36 @@ class Agenda:
  
 		
 		self.menu()
+
+		
+		def anadir(self):
+		print(">>>Añadir nuevo contacto<<<")
+		print("\n")
+		nombre=input("Introduzca el nombre: ")
+		telefono=int(input("Introduzca el teléfono: "))
+		email=input("Introduzca el email: ")
+		self.contactos.append({'nombre':nombre,'telefono':telefono,'email':email})
+		
+ 
+
+	def lista(self):
+		print(">>>>Lista de contactos<<<<")
+		print("\n")
+		if len(self.contactos) == 0:
+			print("No se ha añadido un contacto en la agenda")
+		else:
+			for x in range(len(self.contactos)):
+				print(f"CONTACTOS:: {self.contactos[x]['nombre']}")
+		
+
+	def buscar(self):
+		print(">>>>Buscador de contactos<<<<")
+		print("\n")
+		nom=input("Introduzca el nombre del contacto: \n")
+		for x in range(len(self.contactos)):
+			if nom == self.contactos[x]['nombre']:
+				print(">>>>Datos del contacto<<<<")
+				print("Nombre: ",self.contactos[x]['nombre'])
+				print("Teléfono: ",self.contactos[x]['telefono'])
+				print("E-mail: ",self.contactos[x]['email'])
+				return x
