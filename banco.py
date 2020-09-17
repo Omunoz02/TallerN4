@@ -21,7 +21,7 @@ class Cliente:
 		print("")
 
 		
-		class Banco:
+class Banco:
 
 	def __init__(self):
 		self.cliente1=Cliente(input("Nombre cliente 1: \n"))
@@ -38,7 +38,7 @@ class Cliente:
 		self.cliente2.extraer(500)
 		
 		
-		def depositos(self):
+	def depositos(self):
 		total=self.cliente1.devolver_cantidad()+self.cliente2.devolver_cantidad()+self.cliente3.devolver_cantidad()
 		print("El total de dinero del banco es: ",total )
 		print("")
