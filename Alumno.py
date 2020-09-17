@@ -7,14 +7,22 @@ class Alumno:
         self.nota = float(input("Digite la nota(0-5) del alumno: \n"))
  
  
-    # función para imprimir los datos
+
     def imprimir(self):
                print(f"Nombre del Alumno: {self.nombre}")
                print(f"Nota del alumno: {self.nota}")
 
-    # función para obtener el resultado
+
     def resultado(self):
                if self.nota < 3:
                               print(">>>>>El alumno ha reprobado<<<<<<")
                else:
                               print(">>>>>El alumno ha aprobado<<<<<<")
+def main():
+    alumno1 = Alumno()
+    alumno1.imprimir()
+    alumno1.resultado()
+
+
+if __name__== "__main__":
+    main()
