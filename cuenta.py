@@ -48,7 +48,8 @@ def Menu():
     def imprimirCuenta():
         cuenta1 = cuenta()
         cuenta1.imprimir()
-        def opciones():
+        
+    def opciones():
         os.system("cls")
 
         while(True):
@@ -82,49 +83,6 @@ def Menu():
             os.system("cls")
     opciones()
 
-
-
-
-def main():
-    Men=Menu()
-    Men.opciones()
-
-
-if __name__ == "__main__":
-    main()
-        def opciones():
-        os.system("cls")
-
-        while(True):
-            print("")
-            print(">>>>>>>>>PROBLEMA 4: CUENTA<<<<<<<<<< ")
-            print("-----Opciones------")
-            print("1.Imprimir datos de la cuenta")
-            print("2.Mostrar caja de ahorro")
-            print("3.Mostrar estado de cuenta")
-            print("4.salir")
-
-            opc = int(input("Elija una opcion: \n "))
-            if opc==1:
-                print("")
-                imprimirCuenta()
-
-            elif opc==2:
-                print("")
-                mostrarCaja()
-            elif opc==3:
-                print("")
-                mostrarDatosFinales()
-            elif opc==4:
-                print("")
-                print("Vuelva pronto, bye :)")
-                break
-            else:
-                print("Error//Ha introducido una opcion incorrecta, por favor intentelo de nuevo \n")
-                break
-            os.system("pause")
-            os.system("cls")
-    opciones()
 
 
 
