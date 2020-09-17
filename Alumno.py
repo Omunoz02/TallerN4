@@ -11,3 +11,10 @@ class Alumno:
     def imprimir(self):
                print(f"Nombre del Alumno: {self.nombre}")
                print(f"Nota del alumno: {self.nota}")
+
+    # función para obtener el resultado
+    def resultado(self):
+               if self.nota < 3:
+                              print(">>>>>El alumno ha reprobado<<<<<<")
+               else:
+                              print(">>>>>El alumno ha aprobado<<<<<<")
