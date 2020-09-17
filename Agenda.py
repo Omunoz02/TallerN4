@@ -89,7 +89,7 @@ class Agenda:
 			print("2.Teléfono")
 			print("3.E-mail")
 			print("4.Volver")
-			option=int(input("Ingrese la opción deseada: \n"))
+			option=int(input("Ingrese la opción deseada:\n"))
 			if option==1:
 				nom=input("Ingrese el nuevo nombre: \n")
 				self.contactos[data]['nombre']=nombre
