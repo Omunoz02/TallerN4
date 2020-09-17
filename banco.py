@@ -36,3 +36,21 @@ class Cliente:
 		self.cliente1.depositar(5000)
 		self.cliente3.depositar(5000)
 		self.cliente2.extraer(500)
+		
+		
+		def depositos(self):
+		total=self.cliente1.devolver_cantidad()+self.cliente2.devolver_cantidad()+self.cliente3.devolver_cantidad()
+		print("El total de dinero del banco es: ",total )
+		print("")
+
+		self.cliente1.imprimir()
+		self.cliente2.imprimir()
+		self.cliente3.imprimir()
+
+def main():
+    banco=Banco()
+    banco.operacion()
+    banco.depositos()
+
+if __name__ == "__main__":
+    main()
