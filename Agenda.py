@@ -79,7 +79,7 @@ class Agenda:
 				print("E-mail: ",self.contactos[x]['email'])
 				return x
 	def editar(self):
-		print(">>>>Editar contacto<<<<")
+		print(">>>>Editar contacto<<<< ")
 		print("\n")
 		data=self.buscar()
 		condition=False
