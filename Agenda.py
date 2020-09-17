@@ -19,7 +19,7 @@ class Agenda:
 		for x in range(6):
 			print(menu[x][0])
 
-		opcion=int(input("Introduzca la opción deseada:\n"))
+		opcion=int(input("Ingrese la opción deseada:\n"))
 		if opcion==1:
 			print("\n")
 			self.anadir()
@@ -47,7 +47,7 @@ class Agenda:
 		self.menu()
 
 		
-		def anadir(self):
+	def anadir(self):
 		print(">>>Añadir nuevo contacto<<<")
 		print("\n")
 		nombre=input("Introduzca el nombre: ")
