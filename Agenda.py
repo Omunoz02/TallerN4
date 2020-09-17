@@ -78,3 +78,35 @@ class Agenda:
 				print("Teléfono: ",self.contactos[x]['telefono'])
 				print("E-mail: ",self.contactos[x]['email'])
 				return x
+	def editar(self):
+		print(">>>>Editar contacto<<<<")
+		print("\n")
+		data=self.buscar()
+		condition=False
+		while condition==False:
+			print("Selecciona que quieres editar: \n")
+			print("1.Nombre")
+			print("2.Teléfono")
+			print("3.E-mail")
+			print("4.Volver")
+			option=int(input("Ingrese la opción deseada: \n"))
+			if option==1:
+				nom=input("Ingrese el nuevo nombre: \n")
+				self.contactos[data]['nombre']=nombre
+			elif option==2:
+				telf=input("Ingrese el nuevo teléfono:\n ")
+				self.contactos[data]['telf']=telefono
+			elif option==3:
+				email=input("Introduzca el nuevo email: \n")
+				self.contactos[data]['email']=email
+			elif option==4:
+				condition=True
+ 
+ 
+ 
+def main():
+    agenda=Agenda()
+    agenda.menu()
+
+if __name__== "__main__":
+    main()
